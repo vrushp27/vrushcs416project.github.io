@@ -1,0 +1,211 @@
+body {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+svg {
+    background-color: rgba(218, 214, 214, 0.87);
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    color: #111;
+    font-family: 'Playfair Display';
+    font-size: 52px;
+    font-weight: 158;
+    letter-spacing: 2.1px;
+    line-height: 1;
+    text-align: center;
+    padding: 20.2px;
+    animation: textclip 2s linear infinite;
+}
+
+h2 {
+    color: #111;
+    font-family: 'Lucida Console', Lucida Console;
+    font-size: 32px;
+    font-weight: 155;
+    letter-spacing: 2.1px;
+    line-height: 1;
+    text-align: left;
+    padding: 5.1px;
+}
+
+h3 {
+    color: rgb(7, 5, 92);
+    font-family: 'Lucida Console', Lucida Console;
+    font-size: 22px;
+    font-weight: 254;
+    letter-spacing: 2.1px;
+    line-height: 2.1;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(7, 5, 92);
+    font-family: 'Lucida Console', Lucida Console;
+    font-size: 22px;
+    font-weight: 254;
+    letter-spacing: 2.1px;
+    line-height: 1;
+    text-align: center;
+}
+
+h5 {
+    color: rgb(7, 5, 92);
+    font-family: 'Lucida Console', Lucida Console;
+    font-size: 22px;
+    font-weight: 254;
+    line-height: 1;
+    text-align: left;
+    list-style-type:circle;
+}
+
+li {
+    text-align: left; color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    letter-spacing: 1px;
+    line-height: 3;
+}
+
+p {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 150;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+label,
+text, a {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 150;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+circle {
+    stroke: black;
+    stroke-width: 0.5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 90px;
+    height: 38px;
+    padding: 2px;
+    font-family: 'Helvetica Light', sans-serif;
+    font-weight: lighter;
+    font: 18px sans-serif;
+    background: rgb(174, 181, 190);
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.italic {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+hr {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.back {
+    font-family: 'Helvetica Neue', sans-serif;
+    float: right;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.contents {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.0rem 3rem;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    color: rgb(41, 10, 90);
+}
+
+span {
+    background-color: rgba(3, 3, 3, 0.753);
+    font-size: xx-large;
+    color:rgba(240, 240, 240, 0.753)
+}
+
+.datapt {
+    stroke-width: 1px;
+    stroke: black;
+    opacity: .8
+  }
+
+.datapt:hover {
+    stroke: black;
+}
+
+button {
+    display: inline-block;
+    background-color: lightblue;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+#highway {
+    background-color: rgb(159, 152, 190);
+}
+
+#city {
+    background-color: rgb(130, 196, 175);
+}
+
+img {
+    float: left;
+    padding-right: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float:left;
+    width: 45%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

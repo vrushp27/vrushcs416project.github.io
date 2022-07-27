@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<head>
+    <title>MPG For Cars</title>
+    <link rel="stylesheet" type = "text/css" href="index.css">
+</head>
+
+<body onload="load1(); load2();">
+    <h1 id = "intro" style="background-color: rgb(109, 139, 0);" style="font-size: xxxx-large;" 
+    style="font: bold;" >MPG For Cars (YEAR: 2017)
+    </h1>
+    <div>
+        <span class="d3js">Author: Vrush Patel</span>
+        <hr>
+        <div class="row">
+            <div class="column">
+              <img src="background.png" alt="background" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="hybrid.png" alt="hybrid" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="car.png" alt="car" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="mpg.png" alt="car" style="width:100%">
+              </div>
+          </div>
+    </div>
+        <hr>
+        <h3>
+            In today's world, many people buy cars without checking the mileage. Most of the young population nowadays
+            ignores the fact that gas is super expensive as well as it's polluting the environment. Slowly, the entire world 
+            is leaning towards buying electric vehicles; however, many people still think they're expensive and not worth 
+            the price; however, the don't think that they will end up spending so much money in gas over many years if 
+            they keep that low MPG car. This Narrative Visualization will further explain different charts in how 
+            you can save a lot of money in buying specific brands of cars that give good MPG as well as leaning them towards getting
+            an electric car which will be better for the environment. 
+        </h3>
+        <hr>
+        <ul>
+
+            <h3 style="font-size:xxx-large;">What are some common questions with this dataset?</h3>
+            <h5 style="text-align: center;"> You can click on any of the questions below to find the answers with visualizations!</h5>
+            <a href="#FirstScene" class="contents" style="color:darkblue;"><li>How do the Engine Cylinders play a huge role in determining the MPG?</li></a>
+            <a href="#SecondScene" class="contents style="color:darkblue;"><li>The overall comparing of the Engine Cylinders, MPG, and Fuel Type</li></a>
+            <a href="#ThirdScene" class="contents" style="color:darkblue;"><li>Comparing car MPG with different Engine Cylinders?</li></a>
+        </ul>
+        <hr>
+
+
+    <a href="#FirstScene" class="back">Next</a>
+
+    <h4 id="FirstScene" style="font-size:xxx-large;">How do the Engine Cylinders play a huge role in determining the MPG?</h4>
+
+    <p>
+        <h5>
+        Below is a chart for different types of brands sorted by different colors along with the Average Highway MPG.
+        </h5>
+
+    </p>
+    <p>
+        <h5>
+        The user can simply hover over any of the circles to find the brand and see the range of the average MPG Below
+        on the x-axis as well as on the left side it shows different numbers of cylinders which are also available
+        to further click on and filter the data.
+        </h5>
+    </p>
+
+    <svg id="first_graph" width=1050 height=400></svg>
+    <hr>
+
+    <p>
+        <h5>
+        Below is a chart for different types of brands sorted by different colors along with the Average City MPG. Interactive
+        features like the previous graph is available with this graph as well!
+        </h5>
+    </p>
+
+    <svg id="second_graph" width=1050 height=400></svg>
+    <hr>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
