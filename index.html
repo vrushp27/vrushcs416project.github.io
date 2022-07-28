@@ -7,7 +7,7 @@
     <link rel="stylesheet" type = "text/css" href="index.css">
 </head>
 
-<body onload="load1(); load2();">
+<body onload="load1(); load2(); load3(); load4();">
     <h1 id = "intro" style="background-color: rgb(109, 139, 0);" style="font-size: xxxx-large;" 
     style="font: bold;" >MPG For Cars (YEAR: 2017)
     </h1>
@@ -43,15 +43,15 @@
         <ul>
 
             <h3 style="font-size:xxx-large;">What are some common questions with this dataset?</h3>
-            <h5 style="text-align: center;"> You can click on any of the questions below to find the answers with visualizations!</h5>
+            <h2 style="text-align: center;"> You can click on any of the questions below to find the answers with visualizations!</h2>
             <a href="#FirstScene" class="contents" style="color:darkblue;"><li>How do the Engine Cylinders play a huge role in determining the MPG?</li></a>
-            <a href="#SecondScene" class="contents style="color:darkblue;"><li>The overall comparing of the Engine Cylinders, MPG, and Fuel Type</li></a>
-            <a href="#ThirdScene" class="contents" style="color:darkblue;"><li>Comparing car MPG with different Engine Cylinders?</li></a>
+            <a href="#SecondScene" class="contents style="color:darkblue;"><li>How can you compare the three factors (MPG, Cylinders, & Fuel Type)?</li></a>
+            <a href="#ThirdScene" class="contents" style="color:darkblue;"><li>How can you determine which car to buy depending on MPG?</li></a>
         </ul>
         <hr>
 
 
-    <a href="#FirstScene" class="back">Next</a>
+    <a href="#SecondScene" class="back">Next</a>
 
     <h4 id="FirstScene" style="font-size:xxx-large;">How do the Engine Cylinders play a huge role in determining the MPG?</h4>
 
@@ -80,8 +80,41 @@
     </p>
 
     <svg id="second_graph" width=1050 height=400></svg>
+
     <hr>
 
+    <a href="#intro" class="back">Back to Top</a>
+    <a href="#FirstScene" class="back">Previous</a>
+    <a href="#ThirdScene" class="back">Next</a>
+
+    <h4 id="SecondScene" style="font-size:xxx-large;">How can you compare the three factors (MPG, Cylinders, & Fuel Type)?</h4>
+    <p>
+        <h5>
+            Below is a chart that shows the relationship between the Engline Cylinders with the the bubbles that 
+            represent the MPG and the x-axis with the Fuel Type!
+        </h5>
+    </p>
+    <svg id="third_graph" width=1030 height=1175></svg>
+
+    <hr>
+
+    <a href="#intro" class="back">Back to Top</a>
+    <a href="#SecondScene" class="back">Previous</a>
+
+    <h4 id="ThirdScene" style="font-size:xxx-large;">How can you determine which car to buy depending on MPG?</h4>
+    <p>
+        <h5>
+            Below is a chart that can help you determine which car brand will be better at giving you good MPG. 
+        </h5>
+    </p>
+    <div>
+        <button id="highway" onclick="change('AverageHighwayMPG')">Average Highway MPG</button>
+        <button id="city" onclick="change('AverageCityMPG')">Average City MPG</button>
+    </div>
+    <svg id="fourth_graph" width=1050 height=1100>
+        <text x="900" y="700">Good gas mileage</text>
+        <line x1="0" y1="700" x2="900" y2="700" stroke="black" stroke-dasharray="4" />
+    </svg>
     <script src="app.js"></script>
 
 </body>

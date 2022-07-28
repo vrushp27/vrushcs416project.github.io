@@ -23,14 +23,13 @@ h1 {
 }
 
 h2 {
-    color: #111;
+    color: rgb(7, 5, 92);
     font-family: 'Lucida Console', Lucida Console;
-    font-size: 32px;
-    font-weight: 155;
-    letter-spacing: 2.1px;
+    font-size: 26px;
+    font-weight: 254;
     line-height: 1;
     text-align: left;
-    padding: 5.1px;
+    list-style-type:circle;
 }
 
 h3 {
@@ -64,42 +63,16 @@ h5 {
 }
 
 li {
-    text-align: left; color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    font-weight: 150;
+    font-size: 20px;
+    font-weight: 125;
     letter-spacing: 1px;
     line-height: 3;
+    text-align: left; 
+    font-family: 'Lucida Console', Lucida Console;
+    color: rgb(4, 1, 8);
 }
 
-p {
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: 150;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-label,
-text, a {
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: 150;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-circle {
-    stroke: black;
-    stroke-width: 0.5px;
-}
-
-.axis path,
-.axis line {
+.axis path, .axis line {
     fill: none;
     stroke: black;
     shape-rendering: crispEdges;
@@ -125,10 +98,6 @@ div.tooltip {
     pointer-events: none;
 }
 
-.italic {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-style: italic;
-}
 
 hr {
     margin-bottom: 60px;
@@ -136,10 +105,36 @@ hr {
 }
 
 .back {
-    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     float: right;
-    font-size: 10px;
+}
+
+img {
+    float: left;
+    padding-right: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float:left;
+    width: 45%;
     padding: 5px;
+  }
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .contents {
@@ -190,22 +185,3 @@ button {
 #city {
     background-color: rgb(130, 196, 175);
 }
-
-img {
-    float: left;
-    padding-right: 20px;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float:left;
-    width: 45%;
-    padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
